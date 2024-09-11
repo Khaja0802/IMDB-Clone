@@ -1,7 +1,9 @@
 import "./App.css";
 import Navbar from "./Components/Navbar";
+import Banner from "./Components/Banner"
 import Movies from "./Components/Movies";
 import WatchList from "./Components/WatchList";
+
 
 import {BrowserRouter, Routes, Route} from 'react-router-dom'
 
@@ -11,7 +13,7 @@ function App() {
     <BrowserRouter>
     <Navbar/>
     <Routes>
-      <Route path="/" element={<Movies/>}/>
+      <Route path="/" element={<><Banner/> <Movies/></>}/>
       <Route path="/watchlist" element={<WatchList/>}/>
 
 
